@@ -15,6 +15,7 @@
  */
 
 #include "quantum.h"
+#include "process_keycode/process_tap_dance.h"
 
 #ifdef SWAP_HANDS_ENABLE
 // clang-format off
@@ -35,3 +36,26 @@
         const uint8_t PROGMEM encoder_hand_swap_config[NUM_ENCODERS] = {1,0};
 #    endif
 #endif
+
+// enum {
+//     TD_LCTL_A_B = 0,
+// };
+//
+// void dance_lctl_a_b_finished(tap_dance_state_t *state, void *user_data) {
+//     if (state->count == 1) {
+//         // On single tap, send LCtrl + A
+//         register_code(KC_LCTL);
+//         tap_code(KC_A);
+//         unregister_code(KC_LCTL);
+//     } else {
+//         // On long press, send LCtrl + B
+//         register_code(KC_LCTL);
+//         tap_code(KC_B);
+//         unregister_code(KC_LCTL);
+//     }
+// }
+//
+// tap_dance_action_t tap_dance_actions[] = {
+//     [TD_LCTL_A_B] = ACTION_TAP_DANCE_FN(dance_lctl_a_b_finished),
+// };
+

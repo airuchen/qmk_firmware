@@ -17,3 +17,4 @@
 # presence of this file is required for QMK to compile it.
 CAPS_WORD_ENABLE = yes
 TAP_DANCE_ENABLE = yes
+AUTO_SHIFT_ENABLE = no
